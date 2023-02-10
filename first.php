@@ -40,7 +40,11 @@ $numbers = [1,2,3,4,5,-5];
 echo $numbers . '<br/>';
 print_r($numbers);
 
-
+if($isCompleted){
+   echo 'It is completed';
+}else {
+    echo 'Boolean is false';
+}
 
 
 
