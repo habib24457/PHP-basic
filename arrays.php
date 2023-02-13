@@ -50,11 +50,11 @@ echo $students['engineering']['course'] . '<br/>';
 echo $students['commerce']['batches'][0]['end'];
 
 #Array push, pop, shift
-$anotherArray = [1,2,3,4,5];
+$anotherArray = [1, 2, 3, 4, 5];
 echo '<br/>Original array <br/>';
 print_r($anotherArray);
 
-array_push($anotherArray,6); // add an element at the end of array
+array_push($anotherArray, 6); // add an element at the end of array
 
 echo '<pre>';
 print_r($anotherArray);
@@ -73,9 +73,13 @@ print_r($anotherArray);
 echo '<pre/>';
 
 echo 'After unset, removes a specific element from the array';
-unset($anotherArray[2],$anotherArray[4]);
+unset($anotherArray[2], $anotherArray[4]);
 echo '<pre>';
 print_r($anotherArray);
 echo '<pre/>';
 
-?>
+#show an array within a range
+
+$randomArray = range(1, 5);
+echo 'Random array';
+print_r($randomArray);
